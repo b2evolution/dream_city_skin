@@ -126,6 +126,7 @@ h6 {
 	width: 960px;
 		font: 11px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	text-align: center;
+	    margin-top: -25px;
 }
 
 #container { 
