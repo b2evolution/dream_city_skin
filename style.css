@@ -1,0 +1,442 @@
+/*
+dream_city skin 0.1 for b2evolution 2.x series..
+
+Ported to b2 by Emin Özlem (tilqicom)  http://www.cssdizayn.com eminozlem@gmail.com
+
+/* Original Design by Tony Pires*/
+
+@import url("../../rsc/css/basic.css");	/* Import basic styles */
+@import url("../../rsc/css/img.css");	/* Import standard image styles */
+@import url("../../rsc/css/blog_elements.css");	/* Import standard blog elements styles */
+@import url("../../rsc/css/forms.css");	/* Import default form styles */
+@import url("../../rsc/css/comments.css");	/* Import default comment styles */
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body  {
+	background: url(images/bg.jpg) repeat-x #FFF;
+	color: #435F73;
+
+}
+
+/**** GENERAL STYLES ****/
+
+a {
+	color: #435F73;
+}
+
+p {
+	line-height: 1.5em;
+	padding: 4px 0;
+}
+
+b,
+strong {
+	color: #000;
+}
+
+i,
+em {
+	font-family: Georgia, serif;
+}
+
+#mainContent ul,
+#mainContent ol {
+	line-height: 1.5em;margin: 5px 0 5px 50px;
+}
+
+#mainContent ul li {
+	list-style-image: url(images/b.gif);
+}
+
+blockquote {
+	background: url(images/q.gif) no-repeat;
+	font: 12px Georgia, serif;
+	font-style: italic;
+	margin: 10px 0 10px 20px;
+	padding: 0 60px 0 30px;
+	text-align: left;
+}
+
+code {
+	background: #E5EDF7;
+	border-top: 1px solid #84B0D3;
+	border-bottom: 1px solid #84B0D3;
+	padding: 2px 4px 0 4px;
+}
+
+input,
+textarea {
+	background: #84B0D3;
+	border: none;
+	color: #000;
+	padding: 4px 2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #6998C6;
+	font-weight: normal;
+	line-height: 1.4em;
+}
+
+h5,
+h6 {
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+h4 {
+	font-size: 14px;
+}
+
+h5 {
+	font-size: 12px;
+}
+
+h6 {
+	font-size: 10px;
+}
+
+/**** GENERAL LAYOUT ****/
+
+#topBackground {
+	background: url(images/header.jpg) top center no-repeat;
+	margin: 0 auto;
+	padding-top: 440px;
+	width: 960px;
+		font: 11px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+#container { 
+	margin: 0 auto; 
+	text-align: left; 
+	width: 680px;
+}
+
+#header h1 {
+	font-size: 48px;
+	font-weight: normal;
+	letter-spacing: -3px;
+	padding-left: 24px;
+	clear:both;
+	text-transform: lowercase;
+	color: #000000;
+}
+
+#header h2 {
+	color: #6998C6;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: normal;
+	padding-right: 70px;
+	text-align: right;
+}
+
+#header a {
+	text-decoration: none;
+}
+
+#header {
+clear: both;
+}
+
+#miniMenu, .blog_list {
+	height: 20px;
+	float: right;
+	font-size: 10px;
+	padding-right: 70px;
+	padding-top: 5px;
+}
+
+.blog_list {
+	float: left;
+}
+
+#miniMenu li, .blog_list a {
+	display: inline;
+	margin: 0 1px;
+}
+
+#miniMenu a, .blog_list a {
+	background: #000;
+	color: #FFF;
+	padding: 2px 4px;
+}
+
+#miniMenu a:hover, .blog_list a:hover {
+	background: #435F73;
+	color: #B1DEFF;
+}
+
+
+
+#sidebar {
+	float: right;
+	width: 200px;
+	padding: 90px 0 0 20px;
+	margin-right: 2px;	
+}
+
+#mainContent { 
+	margin: 0 220px 0 20px;
+} 
+
+.blog {
+	background: url(images/blog_top.jpg) top center no-repeat;
+	margin-top: 30px;
+}
+
+.blogHeader h2 a {
+	color: #FFF;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.blogHeader h2 a:hover {
+	color: #B1DEFF;
+}
+
+.blogHeader h3,
+.blogHeader h3 a {
+	color: #B1DEFF;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 2em;
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+
+.blogHeader h3 a:hover,
+#footer a:hover {
+	text-decoration: underline;
+}
+
+.blog2 {
+	background: url(images/blog_bottom.jpg) bottom center no-repeat;
+	padding: 6px 15px;
+	text-align: justify;
+}
+
+h3.blogMeta,
+h3.blogMeta a {
+	color: #FFF;
+	font-size: 11px;
+	height: 11px;
+	margin-top: 20px;
+	padding-bottom: 8px;
+	text-align: center;
+	text-decoration: none;
+}
+
+h3.blogMeta a:hover {
+	text-decoration: underline;
+}
+
+.blogTags { 
+	float: left;
+}
+
+/**** SIDEBAR STYLES & LAYOUT ****/
+
+#sidebar h3 {
+	color: #FFF;
+	font-size: 22px;
+	font-weight: normal;
+	margin:0px;
+	padding:0;
+}
+
+#sidebar ul {
+	list-style: none;
+	padding-left: 20px;
+}
+
+#sidebar li {
+	line-height: 2em;
+	font-size: 13px;
+}
+
+#sidebar li a {
+	color: #B1DEFF;
+	text-decoration: none;
+}
+
+#sidebar li a:hover {
+	color: #FFF;
+}
+
+#sidebar li.sbContent h3 {
+	margin-top: 5px;
+}
+
+#sidebar li.sbContent p {
+	border-left: 4px solid #84B0D3;
+	color: #FFF;
+	font-size: 11px;
+	padding: 0 20px 0 5px;
+}
+
+#search input {
+	margin-top: 10px;
+	width: 110px;
+}
+
+.sb1 {
+	background: url(images/sidebar1.gif) repeat-y;
+	margin-top: -1px;
+	padding-bottom: 20px;
+}
+
+.sb1 li.sbb {
+	background: url(images/sidebar_sep1.gif) no-repeat;
+	height: 37px;
+	margin-left: -20px;
+	width: 200px;
+}
+
+.sb2 {
+	background: url(images/sidebar2.gif) repeat-y;
+}
+
+.sb2 li.sbb {
+	background: url(images/sidebar_sep2.gif) no-repeat;
+	height: 35px;
+	margin-left: -20px;
+	width: 200px;
+}
+
+.sb3 {
+	background: #000;
+	margin-right: 0;
+	margin-top: -1px;
+	font-size: 1.2em;
+	color: #0099CC;
+	padding-top: 5px;
+		margin:0;
+	pading:0;
+}
+
+.sb3 li.sbb {
+	background: #000 url(images/sidebar_base.gif) no-repeat;
+	height: 16px;
+	margin-left: -20px;
+	width: 200px;
+
+}
+
+
+
+
+#footer { 
+	margin: 0 auto;
+	clear:both;
+	padding: 0 100px 0 100px;
+	border-bottom: 1px dashed #0099CC;
+	margin-bottom: 20px;
+} 
+
+#footer p {
+	color: #B1DEFF;
+	padding: 8px 0 0 0;
+	text-align: center;
+}
+
+#footer a {
+	color: #006699;
+	text-decoration: none;
+}
+
+.floatR {
+	float: right;
+}
+
+.floatL {
+	float: left;
+}
+
+.clearfloat {
+	clear: both;
+}
+
+
+
+
+.b2 {
+background: #000;
+}
+.PageTop {
+	height: 20px;
+	float: left;
+	font-size: 10px;
+	padding-right: 70px;
+	padding-top: 5px;
+}
+
+.PageTop li {
+	display: inline;
+	margin: 0 1px;
+}
+
+.PageTop a {
+	background: #000;
+	color: #fff;
+	padding: 2px 4px;
+}
+
+.PageTop a:hover {
+	background: #435F73;
+	color: #B1DEFF;
+}
+
+.widget_core_coll_title h1 a {
+color: #000000;}
+
+.search .SearchField {
+width: 150px;}
+
+.widget_core_coll_tagline {
+text-align: right;
+padding-right: 80px;
+font-size: 1.2em;}
+
+.bComment {
+overflow: hidden;}
+
+.bText {
+padding-bottom: 30px;}
+
+.goto {
+position: relative;
+border: 1px dashed  #006699;
+width: auto;
+}
+
+#gotoposts {
+border: 1px dashed  #006699;
+width: 150px;
+position: absolute;
+left: 30px;
+top: 30px;
+}
+

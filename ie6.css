@@ -1,0 +1,20 @@
+
+/**** SPECIAL Internet Explorer FIXES FOR VERSION 6 and below ****/
+* {
+}
+#sidebar { 
+background: none;
+	margin-right: 1px;
+}
+
+h3.blogMeta {
+	position: relative;
+	top: 4px;
+}
+
+#mainContent #commentList {
+	margin-left: 32px;
+}
+
+#widget_plugin_evo_Calr{
+margin-bottom: -10px;}
